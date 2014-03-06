@@ -113,14 +113,14 @@
         function init_torque(map, options) {
           // init torque layer
           torqueLayer = new torque.GMapsTorqueLayer(_.extend({
-            user       : 'johnb30',
-            table      : 'protest_data',
-            column     : 'date',
-            countby    : 'count(count)',
-            resolution: 8,
-            steps: 885,
+            user       : 'ZacharyST',
+            table      : 'gdelt_protestonly_forcartodb_allprotests',
+            column     : 'day',
+            countby    : 'count(cartodb_id)',
+            resolution: 1,
+            steps: 426,
             blendmode  : 'xor',
-            animationDuration: 130,
+            animationDuration: 50,
             map: map
           }, options));
 
